@@ -1,0 +1,61 @@
+.contact {
+    display: flex;
+    gap: 24px;
+}
+
+.contact div {
+    width: 100%;
+}
+
+.data p {
+    font-size: 14px;
+}
+
+.data ul li {
+    font-size: 15px;
+}
+
+.form p {
+    display: flex;
+}
+
+.form p label {
+    min-width: 80px;
+    text-decoration-color: brown;
+    align-items: center;
+    background-color: rgb(149, 170, 72);
+}
+
+.form input[type="submit"] {
+    background-color: chocolate;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(138, 30, 210);
+    border-radius: 10px;
+}
+
+.form input[type="text"] {
+    background-color: rgb(96, 235, 119);
+}
+
+.data ul li button {
+    font-size: 16px;
+    background-color: rgb(255, 113, 113);
+    box-decoration-break: slice;
+    border-radius: 5px;
+}
+
+.data ul li button:hover {
+    background-color: rgb(42, 165, 83);
+    border-radius: 10px;
+}

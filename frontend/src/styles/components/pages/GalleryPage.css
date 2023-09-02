@@ -1,0 +1,22 @@
+/*inicio gallery*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.gallery img {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 10%;
+    border-color: black;
+    border-width: 5px;
+}
+
+/*fin gallery*/

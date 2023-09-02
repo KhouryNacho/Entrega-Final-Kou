@@ -1,0 +1,54 @@
+<h2>Hi {{user_name}}, if you are not part of the team, you are at the wrong neighbourhood, get out!</h1>
+<h3>But if you are part of the family, please welcom, here, look at this beautiful picture.</h2>
+<img src="/images/marrisith_tree.png" alt="cute_marrisith" />
+
+
+<div class="container" style="margint-top: 50px;">
+    <div class="row">
+        <p class="text-end">Hi {{user_name}}! <a class="btn btn-danger" href="/admin/login/logout">Cerrar Sesión</a>
+            <i class="fas fa-sign-out-alt"></i></a>
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-7">
+            <h3>Active Projects List</h3>
+        </div>
+        <div class="col-5 text-end">
+            <a class="btn btn-success" href="/admin/novedades/agregar"><i class="fa fa-plus" aria-hidden="true"></i>New</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">imagen</th>
+                        <th scope="col">Modders</th>
+                        <th scope="col">Status</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{project_id}}</th>
+                        <td>{{project_description}}</td>
+                        <td>{{{project_img_id}}}</td>
+                        <td>{{project_members}}</td>
+                        <td>{{project_status}}</td>
+                        <td class="text-end">
+                            <a href="/admin/novedades/modify/{{project_id}}" project_description="Edit" class="btn btn-sm btn-secondary"><i
+                                    class="fa fa-pencil"></i></a>
+                            <a href="/admin/novedades/delete/{{project_id}}" project_description="Delete" class="btn btn-sm btn-secondary"><i
+                                    class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

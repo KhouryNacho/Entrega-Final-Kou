@@ -1,0 +1,50 @@
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: teal;
+    font-weight: 400;
+}
+
+.bienvenidos {
+    color: teal;
+    font-weight: 400;
+}
+
+.testimonios {
+    width: 75%;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonio {
+    background-color: rgb(255, 0, 0);
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: crimson;
+}
+
+.testimonio .cita {
+    font-weight:bold;
+    font-style: italic;
+    background-color: rgb(11, 184, 54);
+    border-radius: 20%;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+}
+
+.testimonio .autor {
+    font-size: 20px;
+    text-align: center;
+    background-color: darkgoldenrod;
+    display: block;
+    margin: 12px 0;
+    border-radius: 10%;
+    margin-bottom: 2px;
+}

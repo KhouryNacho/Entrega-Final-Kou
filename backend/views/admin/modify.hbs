@@ -1,0 +1,38 @@
+<div class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modify this Mod Project</h4>
+            <form action="/admin/novedades/modify" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{novedad.project_id}}" name="project_id">
+                <div class="mb-3 row">
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input type="text" class="form-control" name="project_description"
+                            value="{{novedad.project_description}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Members</label>
+                        <textarea name="project_members" class="form-control">{{novedad.project_members}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Status</label>
+                        <textarea name="project_status" class="form-control">{{novedad.project_status}}</textarea>
+                    </div>
+                    <div class="mb-3 row">
+                        <p>
+                            <label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen" /></label>
+                        </p>
+                        <p>
+                            <label><input type="checkbox" name="img_delete" id="img_delete" value="1">
+                                Delete de current image?</label>
+                            <input type="hidden" name="img_original" value="{{novedad.project_img_id}}">
+                        </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Modify</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

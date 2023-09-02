@@ -1,0 +1,16 @@
+header {
+    background-color: aquamarine;
+    padding: 16px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
